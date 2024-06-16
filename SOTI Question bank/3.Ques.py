@@ -1,0 +1,7 @@
+length =int(input())
+breath =int(input())
+height =int(input())
+perimeter =(4*(length+breath+height))
+volume =(length*breath*height)
+print("perimeter:",perimeter)
+print("volume:",volume)

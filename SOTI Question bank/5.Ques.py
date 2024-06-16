@@ -1,0 +1,6 @@
+length =int(input())
+breath =int(input())
+required_length =(2*(length+breath))
+area =(length*breath)
+print(f"Required length is {required_length} m")
+print(f"Required area of carpet is {area} sqm")
