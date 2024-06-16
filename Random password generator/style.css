@@ -1,0 +1,127 @@
+:root{
+    --button-color:#4adf86;
+    --primary-font-color:#ffffff;
+    --secondary-font-color:#d5d4d8;
+    --tertiary-font-color:#4adf86;
+    --main-container-color:#1f2937;
+    --main-background-color:#000000;
+    --rectangle-color:#273549;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--main-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-container{
+    max-width: 600px;
+    width: 95%;
+    height: 550px;
+    background-color: var(--main-container-color);
+    border-radius: 10px;
+
+
+}
+
+.sub-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.heading-1,
+.heading-2{
+    font-size: 3.5rem;
+    font-family: 'karla','sans-serif';
+}
+
+.heading-1{
+    color: var(--primary-font-color);
+    margin-bottom: 0.2em;
+}
+.heading-2{
+    color: var(--tertiary-font-color);
+    margin-bottom: 0.2em;
+    text-align: center;
+}
+
+p{
+    font-size: 1.5rem;
+    color: var(--secondary-font-color);
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+button{
+    padding: 0.8em 1.5em;
+    background-color: var(--button-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: var(--secondary-font-color);
+    color: var(--main-background-color);
+}
+
+.rectangle-container{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2.5em; 
+}
+
+.rectangle{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #273549;
+    border-radius: 10px;
+    color: var(--secondary-font-color);
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 2.5em;
+}
+
+.rectangle-bottom-margin{
+    margin-bottom: 1em;
+}
+
+.copy-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    left: 90%;
+    display:none;
+}
+
+@media (max-width:600px){
+    .heading-1,.heading-2{
+        font-size: 2.5rem;
+    }
+    .heading-2{
+        line-height: 55px;
+    }
+    p{
+        width: 90%;
+        line-height: 35px;  
+    }
+    .rectangle-container{
+        width: 90px;
+    }
+}
